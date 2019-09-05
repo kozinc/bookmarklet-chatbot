@@ -1,4 +1,4 @@
-javascript:(function (){
+javascript:(function chatBotLib(){
     /*var chatBotLib = document.createElement('script'); 
     chatBotLib.setAttribute('src', 'http://path/to/external/file.js'); */
     /*var i = 0;
