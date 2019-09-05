@@ -9,7 +9,7 @@ javascript:(function chatBotLib(){
     chatBotButton.innerHTML = "Chat";
     document.body.appendChild(chatBotButton);
 
-    var style = document.createElement('style'), styleContent = document.createTextNode('#chatBotButton { background-color: #555; color: white; padding: 16px 20px; border: none; cursor: pointer; opacity: 0.8; position: fixed; bottom: 23px; right: 28px; width: 280px; } #chatPopup { background:#000000; position: fixed; bottom: 0; right: 15px; border: 3px solid #f1f1f1; z-index: 9; }');
+    var style = document.createElement('style'), styleContent = document.createTextNode('#chatBotButton { background-color: #555; color: white; padding: 16px 20px; border: none; cursor: pointer; opacity: 0.8; position: fixed; bottom: 23px; right: 28px; width: 280px; } #chatPopup { background-color: #FFFFFF;position: fixed; bottom: 0; right: 15px; border: 3px solid #f1f1f1; z-index: 9; min-width: 400px; min-height: 500px; } .chatBotIframe { width: 500px; height: 900px; }');
     
     style.appendChild(styleContent);
     document.head.appendChild(style);
@@ -52,9 +52,11 @@ javascript:(function chatBotLib(){
             closeChatBotButton.addEventListener("click", function() {
                 closeChatBot();
             });
+            chatPopup.appendChild(document.createElement("br"));
 
             var chatBotIframe = document.createElement('iframe');
             chatBotIframe.setAttribute("id", "chatBotIframe");
+            chatBotIframe.setAttribute("class", "chatBotIframe");
             var callMeLink = "https://ps.cocos.si/wp/cm/CallMe.html?tokenId=97FE6493-A08A-47ED-BBFD-F6F9BE63422C&chat=1&video=0&name=Visitor&callerDisplayName=Visitor&subject=Info&comment=&pageId=home";
             chatBotIframe.setAttribute("src", callMeLink);
             chatPopup.appendChild(chatBotIframe);
