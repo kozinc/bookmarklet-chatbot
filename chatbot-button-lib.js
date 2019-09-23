@@ -16,19 +16,9 @@ function chatBotLib(tokenId = "97FE6493-A08A-47ED-BBFD-F6F9BE63422C"){
     /* chatBotButton.innerHTML = "Chat"; */
     document.body.appendChild(chatBotButton);
 
-    var style = document.createElement('style');
-    var styleContent1 = document.createTextNode('#chatBotButton { background-color: #3790CC; color: white; padding: 10px; border: none; cursor: pointer; opacity: 0.8; position: fixed; bottom: 23px; right: 28px; width: 80px; height: 80px; }');
-    var styleContent2 = document.createTextNode('#chatBotButton:hover { opacity: 1; }');
-    var styleContent3 = document.createTextNode('#chatPopup { position: fixed; bottom: 10px; right: 15px; border: 0px; z-index: 7; width: 450px; height: 70%; }');
-    var styleContent4 = document.createTextNode('#chatPopup > iframe { position: absolute; width: 450px; height: 100%; z-index:8; }');
-    var styleContent5 = document.createTextNode('#chatPopup > button, #chatPopup > i { position:relative; float: right; left: 0px; top: 0px; padding: 2px; z-index:9; border: 0px; } ');
-    var styleContent6 = document.createTextNode('.btn-circle { width: 20px; height: 20px; text-align: center; padding: 6px 0; font-size: 12px; line-height: 1.428571429; border-radius: 10px; margin: 2px; }');
-    style.appendChild(styleContent1);
-    style.appendChild(styleContent2);
-    style.appendChild(styleContent3);
-    style.appendChild(styleContent4);
-    style.appendChild(styleContent5);
-    style.appendChild(styleContent6);
+    var style = document.createElement('link');
+    style.rel = 'stylesheet';
+    style.href = 'https://ps.cocos.si/demo/css/chatbot-button-lib.css';
     document.head.appendChild(style);
     
     function openChatBot() {

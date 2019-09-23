@@ -1,0 +1,66 @@
+#chatBotButton {
+    background-color: #3790CC;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 80px;
+    height: 80px;
+}
+
+#chatBotButton:hover {
+    opacity: 1;
+}
+
+#chatPopup {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    border: 0px;
+    z-index: 7;
+    width: 450px;
+    height: 70%;
+}
+
+#chatPopup>iframe {
+    position: absolute;
+    width: 450px;
+    height: 100%;
+    z-index: 8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#chatPopup>button,
+#chatPopup>i {
+    position: relative;
+    float: right;
+    right: 4px;
+    top: 4px;
+    margin: 0px;
+    padding: 2px;
+    z-index: 9;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0.0);
+    color: white;
+}
+
+#chatPopup>button:hover,
+#chatPopup>i:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-circle {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    /* border-radius: 10px;*/
+    margin: 2px;
+}
+
